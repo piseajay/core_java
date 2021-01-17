@@ -1,6 +1,6 @@
 package com.practice.multithreading;
 
-class MyThread extends Thread {
+class MyRunnableClass extends Thread {
 
 	@Override
 	public void run() {
@@ -9,12 +9,12 @@ class MyThread extends Thread {
 	}
 }
 
-public class CreateThreadDemo {
+public class MyThreadClassDemo {
 
 	public static void main(String[] args) {
 
-		MyThread t1 = new MyThread();
-		MyThread t2 = new MyThread();
+		MyRunnableClass t1 = new MyRunnableClass();
+		MyRunnableClass t2 = new MyRunnableClass();
 
 		t1.setName("Finalizer");
 		t1.setPriority(Thread.MAX_PRIORITY);
